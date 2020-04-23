@@ -1,6 +1,6 @@
 # this is a java project using maven
 language: java
 # install
-mvn verify
+install: mvn verify
 # mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 # mvn test -B

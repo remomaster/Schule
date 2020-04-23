@@ -49,4 +49,9 @@ public class AppTest extends TestCase
     public void summetest(){
         assertEquals(5, app.summe(2,3) );
     }
+
+    @Test
+    public void sowiesoFalsch(){
+        fails("Test fail");
+    }
 }

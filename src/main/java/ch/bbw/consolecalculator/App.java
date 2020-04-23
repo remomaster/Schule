@@ -10,4 +10,8 @@ public class App
     {
         System.out.println( "Hello World!" );
     }
+
+    public int summe(int erste, int zweite){
+        return erste + zweite;
+    }
 }

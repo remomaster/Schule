@@ -40,7 +40,7 @@ public class AppTest extends TestCase
         assertTrue( true );
     }
 
-    @Befor
+    @BeforAll
     public void init(){
         app = new App();
     }

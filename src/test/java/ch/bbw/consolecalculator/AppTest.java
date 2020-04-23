@@ -3,13 +3,17 @@ package ch.bbw.consolecalculator;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+import org.junit.*;
+import static org.junit.Assert.*;
+import java.util.*;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
+public class AppTest extends TestCase
 {
+    private App app;
+
     /**
      * Create the test case
      *
@@ -34,5 +38,15 @@ public class AppTest
     public void testApp()
     {
         assertTrue( true );
+    }
+
+    @Befor
+    public void init(){
+        app = new App();
+    }
+
+    @Test
+    public void summetest(){
+        assertEquals(5, app.summe(2,3) );
     }
 }
